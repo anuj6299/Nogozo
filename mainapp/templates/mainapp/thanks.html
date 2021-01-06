@@ -1,0 +1,38 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="tabs"">
+    <br>
+    <div class="container">
+        <div class="alert alert-custom alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Thank You for your response.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    </div>
+<h1 style="text-align: center;">LATEST BLOGS</h1> <br>
+
+<div class="container">
+    {% for article in all_articles %}
+    <a href="{% url 'blog:article' article_id=article.article_id %}" style="text-decoration: none;" >
+    <div class="card" style="background-color: white; opacity: 80%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+        <div class="card-body">
+            <div class="container">
+          <h4 class="card-title" style="color: black;"><b>{{ article.article_title }}</b></h4>
+          <p style= "color: #000; margin-bottom: 10px;"><i class="fas fa-pen-nib"></i> {{article.author}}</p>
+          <p class="card-text" style="color: black;">{{ article.article_summary }}</p>
+          <p class="card-text" style="color: black;"><small class="text-muted">Date posted: {{article.date}}</small></p>
+        </div>
+        </div>
+      </div></a> <br>
+
+      {% endfor %}
+</div>
+
+    
+
+</div>
+    {% endblock %}

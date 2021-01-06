@@ -1,9 +1,8 @@
 from django.contrib import admin
-from .models import Profile, Order, Service, City, Area, Item
+from .models import City, Area, Shop, Item, Feedback, MerchantFeedback, Merchant, Category, Sets
 
-admin.site.register(Profile)
-admin.site.register(Service)
-admin.site.register(City)
-admin.site.register(Area)
-admin.site.register(Item)
-admin.site.register(Order)
+admin.site.register(Feedback)
+admin.site.register(MerchantFeedback)
+admin.site.register(Merchant)
+admin.site.register(Category)
+admin.site.register(Sets)

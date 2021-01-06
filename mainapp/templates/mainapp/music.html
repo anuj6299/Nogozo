@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NOGOZO</title>
+  {% load static %}
+  {% load crispy_forms_tags %}
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="India's First Local Market E-Commerce Company">
+  <meta name="keywords" content="shops near me, online groceries,order online,free delivery,agra local market,daily needs,trending blogs,e-commerce,home businesses,agra,trending blogs,agra news, order daily needs online,shopping, doorstep delivery">
+  <meta name="author" content="Anuj Sharma">
+  <meta property="og:site_name" content="NOGOZO" /> <!-- website name -->
+  <meta property="og:site" content="www.nogozo.com" /> <!-- website link -->
+  <meta property="og:title" content="NOGOZO"/> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="India's First Local Market E-Commerce Company" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="{% static 'mainapp/images/logo.jpg' %}" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/bootstrap/css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/font-awesome/css/font-awesome.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/animate/animate.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/ionicons/css/ionicons.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/owlcarousel/assets/owl.carousel.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/lightbox/css/lightbox.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}"/>
+  
+  <script src="{% static 'mainapp/js/main.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'mainapp/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'mainapp/contactform/contactform.js' %}"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172442704-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-172442704-1');
+</script>
+
+  <!-- Favicons -->
+  <link href="{% static 'mainapp/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'mainapp/img/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+    <!--    <div id="topbar">
+          <div class="container">
+            <div class="social-links">
+              <a href="https://www.facebook.com/nogozoofficial/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/nogozocare/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/nogozocare/" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div> -->
+    
+        <div class="container">   
+          <div class="logo float-left" style="display: inline-block;">
+            <!-- Uncomment below if you prefer to use an image logo -->
+           <a href="{% url 'mainapp:index' %}" class="scrollto"><img src="{% static 'mainapp/img/logo.png' %}" style="max-height: 2.75rem; margin: 0rem;" alt="nogozo" class="img-fluid"></a> 
+           <!-- <h1 class="text-light"><a href="{% url 'mainapp:index' %}" class="scrollto"><span><b>NOGOZO</b></span></a></h1> -->
+          </div>   
+          <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="{% url 'mainapp:index' %}">Home</a></li>
+              <li><a href="{% url 'mainapp:index' %}#pricing">Features</a></li>
+              <li><a href="{% url 'mainapp:index' %}#services">Services</a></li>
+              <li class="drop-down"><a href="">Fun Zone</a>
+                <ul>
+                  <li><a href="{% url 'blog:index' %}">Blogs</a></li>
+                  <li><a href="{% url 'mainapp:music' %}">Music</a></li>
+                  <li><a href="{% url 'mainapp:quizcat' %}">Trivia Quiz</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'mainapp:merchant' %}">Merchants</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+            </ul>
+          </nav>       
+        </div>
+      </header>
+
+<br><br><br><br> 
+
+    <!-- APlayer CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+
+    <style>
+    	
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 15px #6d6d6ea1;
+    		transition: all ease 0.4s;
+            margin-bottom: 1rem;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+
+        .photu{
+            width: 100%; height: 150px;
+        }
+
+        .h5{margin-bottom: 2rem;}
+        .h3{margin-bottom: 1rem;}
+
+@media (max-width: 991px) {
+  .h5{ font-size: 0.8rem; margin-bottom: 1rem;}
+  .h3{font-size: 1.3rem; margin-bottom: 0.5rem;}
+  .photu{width: 100%; height: 5rem;}
+}
+
+
+    	/* h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	} */
+		
+
+		/*default is hide music player*/
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+		
+		/*MUSIC PLAYER CUSTOMIZING STYLE*/
+		/* span{
+			color: #000 !important;
+			font-size: 16px;
+		} */
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+			background: #e0e0e0;
+    		height: 4px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+			height: 4px;
+			background-color: #2196F3 !important;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+			background-color: #2196F3 !important;
+		}
+
+		.aplayer .aplayer-icon{
+			width: 20px;
+			height: 20px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+		    fill: #000;
+		}
+		.aplayer .aplayer-info .aplayer-music{
+			margin-bottom: 5px;
+		}
+
+
+    </style>
+
+<!-- <div class="main"> -->
+	<div class="container">
+			<div class="">
+                <h3 class="h3"><b>Editor's Pick 🎵</b></h3> 
+            </div>
+            <div class="row">
+				<div class="col">
+					<a href="#" class="album-poster" data-switch="0">
+						<img src="https://i1.sndcdn.com/artworks-000677799256-gbk13u-t500x500.jpg" class="photu" alt="">
+					</a>
+					<h5 class="h5"><b>Saari Umar</b></h5>
+					<!-- <p class="h5">Children Day Special</p> -->
+				</div>
+			<div class="col">
+				<a href="javascript:void();" class="album-poster" data-switch="1">
+					<img src="https://i.ytimg.com/vi/emTPIBDBb0A/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Chaap Tilak</b></h5>
+				<!-- <p class="h5">Children Day Special</p> -->
+			</div>
+			<div class="col">
+				<a href="#" class="album-poster" data-switch="2">
+					<img src="https://i.ytimg.com/vi/o0Gy_Cc_p0o/mqdefault.jpg" class="photu"  alt="">
+				</a>
+				<h5 class="h5"><b>Milo Chala</b></h5>
+				<!-- <p class="h5">Children Day Special</p> -->
+			</div>
+        </div>
+        <div class="row">
+			<div class="col">
+				<a href="#" class="album-poster" data-switch="3">
+					<img src="https://i.ytimg.com/vi/rg8yRZQZT6E/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Rangeya</b></h5>
+				<!-- <p class="h5">Harum nam unde digniss - 2020</p> -->
+            </div>
+            <div class="col">
+				<a href="#" class="album-poster" data-switch="4">
+					<img src="https://i.ytimg.com/vi/Ex7e4zv9_Io/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Kuch Suna</b></h5>
+				<!-- <p>Lorem ipsum - 2010</p> -->
+			</div>
+			<div class="col">
+				<a href="#" class="album-poster" data-switch="5">
+					<img src="https://i.ytimg.com/vi/7ODrsDrl3qk/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Kuch Na Kari</b></h5>
+				<!-- <p>Lorem ipsum dolor sit ame - 2020</p> -->
+            </div>
+        </div>
+        <div class="row">
+			<div class="col">
+				<a href="#" class="album-poster" data-switch="6">
+					<img src="https://media.lyricsmint.com/photos/9771/duur-hai-wo-deepak-rathore_cover.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Dur Hai Wo</b></h5>
+				<!-- <p class="h5">Harum nam unde digniss - 2020</p> -->
+            </div>
+            <div class="col">
+				<a href="#" class="album-poster" data-switch="7">
+					<img src="https://i.ytimg.com/vi/BnlsX5z2Sl4/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Tut Gai Yari</b></h5>
+				<!-- <p>Lorem ipsum - 2010</p> -->
+			</div>
+			<div class="col">
+				<a href="#" class="album-poster" data-switch="8">
+					<img src="https://www.lyricsbull.com/wp-content/uploads/2020/07/pyaar-diljit-dosanjh.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Pyar</b></h5>
+				<!-- <p>Lorem ipsum dolor sit ame - 2020</p> -->
+            </div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a href="#editor" class="album-poster" data-switch="9">
+					<img src="https://i.ytimg.com/vi_webp/YaSVWTkBaeA/maxresdefault.webp" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Waareya</b></h5>
+				<!-- <p class="h5">Children Day Special</p> -->
+			</div>
+			<div class="col">
+				<a href="#editor" class="album-poster" data-switch="10">
+					<img src="https://i.ytimg.com/vi_webp/2fEXG4nXiec/maxresdefault.webp?v=5f9e591a" class="photu"  alt="">
+				</a>
+				<h5 class="h5"><b>Ruhama</b></h5>
+				<!-- <p class="h5">Children Day Special</p> -->
+			</div>
+			<div class="col">
+				<a href="#editor" class="album-poster" data-switch="11">
+					<img src="https://i.ytimg.com/vi/lN1m7zLBbSU/maxresdefault.jpg" class="photu" alt="">
+				</a>
+				<h5 class="h5"><b>Kyun Main</b></h5>
+				<!-- <p class="h5">Children Day Special</p> -->
+			</div>
+		</div>
+    </div>
+    <br>
+    <div id="editor" class="container">
+        <div class="">
+            <h3 class="h3"><b>Indian Bands Rocks 🎸</b></h3> 
+        </div>
+        <div class="row">
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="12">
+                <img src="https://i.ytimg.com/vi/Hjone2sV83E/mqdefault.jpg" class="photu" alt="">
+            </a>
+            <h5 class="h5"><b>Kashti - Desert Rock</b></h5>
+        </div>
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="13">
+                <img src="https://i.ytimg.com/vi/qLCLvzTGFVM/sddefault.jpg" class="photu"  alt="">
+            </a>
+            <h5 class="h5"><b>Dil Mere - Local Train</b></h5>
+        </div>
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="14">
+                <img src="https://i.ytimg.com/vi/SNpjLPszREg/hqdefault.jpg" class="photu" alt="">
+            </a>
+            <h5 class="h5"><b>Bawra - Naalayak</b></h5>
+        </div>
+	</div>
+	<div class="row">
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="15">
+                <img src="https://i.ytimg.com/vi/ryEPMuOIbpQ/maxresdefault.jpg" class="photu" alt="">
+            </a>
+            <h5 class="h5"><b>Main Zinda Hoon - Khalnayak</b></h5>
+        </div>
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="16">
+                <img src="https://i.ytimg.com/vi/9VNI3s7rUoQ/maxresdefault.jpg" class="photu"  alt="">
+            </a>
+            <h5 class="h5"><b>Kya Leke Aaya Jagat - Kabir Cafe</b></h5>
+        </div>
+        <div class="col">
+            <a href="#editor" class="album-poster" data-switch="17">
+                <img src="https://i.ytimg.com/vi/zpf8hrbT2d0/maxresdefault.jpg" class="photu" alt="">
+            </a>
+            <h5 class="h5"><b>Tu Kisi Rail si Guzarti Hai - Indian Ocean</b></h5>
+        </div>
+    </div>
+</div>
+<br>
+<div id="punjabi" class="container">
+    <div class="">
+        <h3 class="h3"><b>Punjab Is Lob 🔥</b></h3> 
+    </div>
+<div class="row">
+    <div class="col">
+        <a href="#punjabi" class="album-poster" data-switch="18">
+            <img src="https://i.ytimg.com/vi/MkkvaMoueFc/maxresdefault.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>Oye Hoye by Ritu Bhaggi</b></h5>
+        <!-- <p class="h5">Harum nam unde digniss - 2020</p> -->
+    </div>
+    <div class="col">
+        <a href="#punjabi" class="album-poster" data-switch="19">
+            <img src="https://i.ytimg.com/vi/WQuBqnjyU78/maxresdefault.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>Bachalo Ji - Akhil</b></h5>
+        <!-- <p>Lorem ipsum - 2010</p> -->
+    </div>
+    <div class="col">
+        <a href="#punjabi" class="album-poster" data-switch="20">
+            <img src="https://beststatusvideo.com/siteuploads/thumb/sft10/4759_6.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>Tenu Vekh Vekh Pyar</b></h5>
+        <!-- <p>Lorem ipsum dolor sit ame - 2020</p> -->
+    </div>
+</div>
+</div>
+<br>
+<div id="english" class="container">
+    <div class="">
+        <h3 class="h3"><b>Angrezi Bhi Aati Hai 🎼</b></h3> 
+    </div>
+<div class="row">
+    <div class="col">
+        <a href="#english" class="album-poster" data-switch="21">
+            <img src="https://i.pinimg.com/originals/a3/4a/d4/a34ad47d0f28c49d77c3ab23d565aa03.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>Feel Again - Kina</b></h5>
+        <!-- <p class="h5">Harum nam unde digniss - 2020</p> -->
+    </div>
+    <div class="col">
+        <a href="#english" class="album-poster" data-switch="22">
+            <img src="https://i.ytimg.com/vi/YPsjSWxm-LE/maxresdefault.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>Wish I Was Better</b></h5>
+        <!-- <p>Lorem ipsum - 2010</p> -->
+    </div>
+    <div class="col">
+        <a href="#english" class="album-poster" data-switch="23">
+            <img src="https://i.ytimg.com/vi/ShZ978fBl6Y/hqdefault.jpg" class="photu" alt="">
+        </a>
+        <h5 class="h5"><b>You Are The Reason</b></h5>
+        <!-- <p>Lorem ipsum dolor sit ame - 2020</p> -->
+    </div>
+</div>
+</div>
+<br><br><br>
+<!-- </div> -->
+
+	<div id="aplayer"></div>
+
+	<!-- APlayer Jquery link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+
+	<script>
+
+
+		// NOW I CLICK album-poster TO GET CURRENT SONG ID
+		$(".album-poster").on('click', function(e){
+			var dataSwitchId = $(this).attr('data-switch');
+			//console.log(dataSwitchId);
+
+			// and now i use aplayer switch function see
+			ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
+
+			// aplayer play function
+			// when i click any song to play
+			ap.play();
+
+			// click to slideUp player see
+			$("#aplayer").addClass('showPlayer');
+		});
+
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+		    listFolded: true,
+		    audio: [
+				//editor's pick
+		    {
+		        name: 'Saari Umar',
+		        artist: 'Harish Budhwani',
+		        url: "{% static 'mainapp/music/sariumar.mp3' %}",
+		        cover: 'https://i1.sndcdn.com/artworks-000677799256-gbk13u-t500x500.jpg'
+		    },
+			{
+		        name: 'Chaap Tilak',  // SONG NAME
+		        artist: 'Namita Choudhary', //ARTIST NAME
+		        url: "{% static 'mainapp/music/chaaptilak.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi/emTPIBDBb0A/maxresdefault.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'Milo chala',
+				artist: 'Ashu Shukla',
+				url: "{% static 'mainapp/music/milochala.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/o0Gy_Cc_p0o/mqdefault.jpg',
+			},
+			{
+				name: 'Rangeya',
+				artist: 'Mulazim Hussain',
+				url: "{% static 'mainapp/music/4.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/rg8yRZQZT6E/maxresdefault.jpg',
+			},
+            {
+				name: 'Kuch Suna Sa Hai',
+				artist: 'Ayush Panda',
+				url: "{% static 'mainapp/music/5.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/Ex7e4zv9_Io/maxresdefault.jpg',
+			},
+            {
+				name: 'Kooch Na Karin',
+				artist: 'Azhar Abbas',
+				url: "{% static 'mainapp/music/6.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/7ODrsDrl3qk/maxresdefault.jpg',
+			},
+            {
+				name: 'Duur Hai Wo',
+				artist: 'Deepak Rathore',
+				url: "{% static 'mainapp/music/7.mp3' %}",
+				cover: 'https://media.lyricsmint.com/photos/9771/duur-hai-wo-deepak-rathore_cover.jpg',
+			},
+            {
+				name: 'Tutt Gayi Yaari',
+				artist: 'raashi Sood',
+				url: "{% static 'mainapp/music/8.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/BnlsX5z2Sl4/maxresdefault.jpg',
+			},
+            {
+				name: 'Pyar',
+				artist: 'Diljit Dosanjh',
+				url: "{% static 'mainapp/music/9.mp3' %}",
+				cover: 'https://www.lyricsbull.com/wp-content/uploads/2020/07/pyaar-diljit-dosanjh.jpg',
+			},
+            {
+		        name: 'Waareya',
+		        artist: 'Javed Mohsin',
+		        url: "{% static 'mainapp/music/Waareya.mp3' %}",
+		        cover: 'https://i.ytimg.com/vi_webp/YaSVWTkBaeA/maxresdefault.webp'
+		    },
+			{
+		        name: 'Ruhama',  // SONG NAME
+		        artist: 'Sunil Kamath', //ARTIST NAME
+		        url: "{% static 'mainapp/music/Ruhama.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi_webp/2fEXG4nXiec/maxresdefault.webp?v=5f9e591a' // COVER IMAGE
+		    },
+			{
+				name: 'Kyun Main Jaagoon',
+				artist: 'Shafqat Amanat Ali',
+				url: "{% static 'mainapp/music/Kyun.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/lN1m7zLBbSU/maxresdefault.jpg',
+			},
+			// indian band
+			{
+		        name: 'Kashti',
+		        artist: 'Desert Rock',
+		        url: "{% static 'mainapp/music/13.mp3' %}",
+		        cover: 'https://i.ytimg.com/vi/Hjone2sV83E/mqdefault.jpg'
+		    },
+			{
+		        name: 'Dil Mere',  // SONG NAME
+		        artist: 'The Local Train', //ARTIST NAME
+		        url: "{% static 'mainapp/music/14.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi/qLCLvzTGFVM/sddefault.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'Bawra',
+				artist: 'Naalayak',
+				url: "{% static 'mainapp/music/15.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/SNpjLPszREg/hqdefault.jpg',
+			},
+			{
+		        name: 'Main Zinda Hoon',
+		        artist: 'Khalnayak',
+		        url: "{% static 'mainapp/music/16.mp3' %}",
+		        cover: 'https://i.ytimg.com/vi/ryEPMuOIbpQ/maxresdefault.jpg'
+		    },
+			{
+		        name: 'Kya Leke Aaya Jagat Mai',  // SONG NAME
+		        artist: 'Kabir Cafe', //ARTIST NAME
+		        url: "{% static 'mainapp/music/17.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi/9VNI3s7rUoQ/maxresdefault.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'Tu Kisi Rail si Guzarti Hai',
+				artist: 'Indian Ocean',
+				url: "{% static 'mainapp/music/18.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/zpf8hrbT2d0/maxresdefault.jpg',
+			},
+            // Punjabi Rocks
+            {
+		        name: 'Oye Hoye',
+		        artist: 'Ritu Bhaggi',
+		        url: "{% static 'mainapp/music/OYEHOYE.mp3' %}",
+		        cover: 'https://i.ytimg.com/vi/MkkvaMoueFc/maxresdefault.jpg'
+		    },
+			{
+		        name: 'Bachalo',  // SONG NAME
+		        artist: 'Akhil', //ARTIST NAME
+		        url: "{% static 'mainapp/music/Bachalo.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi/WQuBqnjyU78/maxresdefault.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'Tenu Vekh Vekh Pyar Kar Di',
+				artist: 'Jyotica Tangri',
+				url: "{% static 'mainapp/music/Tenuvekh.mp3' %}",
+				cover: 'https://beststatusvideo.com/siteuploads/thumb/sft10/4759_6.jpg',
+			},
+            // Angrezi
+            {
+		        name: 'Feel Again',
+		        artist: 'Kina',
+		        url: "{% static 'mainapp/music/FeelAgain.mp3' %}",
+		        cover: 'https://i.pinimg.com/originals/a3/4a/d4/a34ad47d0f28c49d77c3ab23d565aa03.jpg'
+		    },
+			{
+		        name: 'Wish I Was Better',  // SONG NAME
+		        artist: 'Kina', //ARTIST NAME
+		        url: "{% static 'mainapp/music/WishIWasBetter.mp3' %}", // PATH NAME AND SONG URL
+		        cover: 'https://i.ytimg.com/vi/YPsjSWxm-LE/maxresdefault.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'You Are The Reason',
+				artist: 'Calum Scott',
+				url: "{% static 'mainapp/music/YouAreTheReason.mp3' %}",
+				cover: 'https://i.ytimg.com/vi/ShZ978fBl6Y/hqdefault.jpg',
+			},
+		    ]
+		});
+	</script>
+
+<style>.whatsapp{position:fixed;right:0;bottom:0;margin:15px;padding:0px;width: 4rem;animation: rotation 2s infinite linear;}@keyframes rotation {from {transform: rotate(0deg);}to{transform: rotate(359deg);}}</style>
+
+  <script src="{% static 'mainapp/js/main.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'mainapp/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'mainapp/contactform/contactform.js' %}"></script> 
+
+  <script src="https://kit.fontawesome.com/1d8298542f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+ /* Add a black background color to the top navigation */
+ body{
+     background-color: #2f2c3d !important;
+ }
+
+ .topnav {
+    background-color: #1E3E64;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 90%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: #4facc3;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+.card {
+    background-color: white; opacity: 90%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.05);   
+}
+
+.slide {
+    animation: example 1s;
+}
+
+@keyframes example {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 200px; top: 0px;}
+}

@@ -1,0 +1,65 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block body %}
+
+<br><br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <div class="text-container">
+                <h1 style="margin-bottom: 15px; font-size: 2rem;"><b>{{article.article_title}}</b></h1>
+                <h6 style= "margin-bottom: 10px; font-size: 0.9rem;"><i class="fas fa-pen-nib"></i> <a href="{{article.author_profile_link}}" style="color: black;">{{article.author}}</a> &nbsp; <i class="fas fa-clock"></i> {{article.date}}</h6>
+
+            <img src="{{article.article_logo}}" style='height: 100%; width: 100%; border-radius: 2px; margin-top: 15px; margin-bottom: 15px; object-fit: contain' /> 
+         
+            <p style="font-size: 1rem;">{{ article.article_text|safe|linebreaks }}</p>
+            <p style="font-size: 1rem;">{{ article.article_text2|safe|linebreaks }}</p>
+            <p style="font-size: 1rem;">{{ article.article_text3|safe|linebreaks }}</p>
+                
+            </div> 
+
+            <br>
+            <div class="card" style="background-color: white; opacity: 70%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                <div class="card-body">
+                    <div class="container" style="display: flex;" >
+                        <div style=" flex: 1; padding: 0 10px 0 0; text-align: left; float: left; border-right: 1px solid #dedede; " >
+                            <a href="{% url 'blog:article' article_id=previous_article.article_id %}" style="text-decoration: none;">
+                            <p style="color: black; font-size: 1rem;"><b>Previous</b></p>
+                            <p style="color: black; font-size: 1rem;">{{previous_article.article_title}}</p> </a>
+                        </div>
+                        <div style=" flex: 1; padding: 0 0 0 10px; text-align: right; float: right;" >
+                            <a href="{% url 'blog:article' article_id=next_article.article_id %}" style="text-decoration: none;">
+                            <p style="color: black; font-size: 1rem;"><b>Next</b></p>
+                            <p style="color: black; font-size: 1rem;">{{next_article.article_title}}</p></a>
+                        </div>
+                </div>
+                </div>
+              </div>
+              <br> <br>
+        </div> 
+        
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <p style="font-size: 1.6rem; margin-bottom: 0rem;"><b>Trending Blogs</b></p> <hr style="border-top: 1px solid black;">
+                {% for trending in trending %}
+                <div class="row">
+                        <div class="col" style="position: relative; padding-right: 0rem; padding-bottom: 1rem;">
+                        <a href="{% url 'blog:article' article_id=trending.trending_url %}" style="text-decoration: none; color: black;">
+                        <img src="{{trending.trending_logo}}" style="height: 100%; width: 100%; border-radius: 2px; object-fit: contain"> 
+                        </div></a>
+                        <div class="col" style="position: relative; padding-right: 0.5rem;"><!-- container with position relative -->
+                        <a href="{% url 'blog:article' article_id=trending.trending_url %}" style="text-decoration: none; color: black;">
+                        <p style="font-size: 1.1rem; margin-bottom: 0rem;"><b>{{trending.trending_title}}</b></p>   
+                        <p style="font-size: 0.8rem;"><b>Date: {{trending.trending_date}}</b></p>  </a>
+                        </div>      
+                </div>
+                {% endfor %}
+        </div>
+    </div> 
+</div>
+
+</div>
+
+<style>
+
+</style>
+    {% endblock %}

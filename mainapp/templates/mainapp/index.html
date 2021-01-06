@@ -1,0 +1,281 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block body %}
+
+<section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col intro-info order-md-first order-last" style="margin-top: 2rem;">
+          <h2>Welcome to Apna wala <span>E-bazzar!</span></h2>
+          <div>
+            <a href="{% url 'mainapp:download' %}" class="btn-get-started scrollto">
+              <i class="fab fa-google-play" style="color: white;"></i> DOWNLOAD NOW</a>
+          </div>
+        </div>
+  
+        <div class="col-md-6 intro-img order-md-last order-first" style="text-align: center;">
+          <img src="{% static 'mainapp/img/intro-img.png' %}" alt="nogozo" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+  	<section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container">
+
+        <header class="section-header">
+        <!--  <h3>Services</h3> -->
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+      
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'mainapp/img/features-1.png' %}" class="img-fluid" style="padding-bottom: 1rem;" alt="nogozo">
+              </div> <br>
+              <div class="card-block">
+                <h4 class="card-title" style="text-align: center;"> 
+                  <b>Explore</b>
+                </h4> 
+                <ul class="list-group" style="text-align: left; padding-left: 3rem;">
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Know your local shops</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Get list of products</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Check Open/Close status</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Search home businesses</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'mainapp/img/features-2.png' %}" class="img-fluid" style="padding-bottom: 1rem;" alt="nogozo">
+              </div> <br>
+              <div class="card-block">
+                <h4 class="card-title" style="text-align: center;"> 
+                  <b>Shop</b>
+                </h4>
+                <ul class="list-group" style="text-align: left; padding-left: 3rem;">
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Access nearby shops</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Build your cart</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> PreBook your order</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Payment flexibility</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'mainapp/img/features-3.png' %}" class="img-fluid" style="padding-bottom: 1rem;" alt="nogozo">
+              </div> <br>
+              <div class="card-block">
+                <h4 class="card-title" style="text-align: center;"> 
+                  <b>Save</b>
+                </h4>
+                <ul class="list-group" style="text-align: left; padding-left: 3rem;">
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Compare prices</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Free Delivery</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> Self pickup flexibility</li>
+                  <li class="list-group-item"><i class="ion-android-checkmark-circle"></i> 24/7 Support System</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+        </div>  
+      </div>
+    </section>
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Services</h3>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s1.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">All in One E-Market</h4>
+              <p class="description">Easy interface access to every Departmental store, Groceries, Dairy, Stationary, Food outlet, and many other essentials on your fingertips.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s2.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">Save Money</h4>
+              <p class="description">Compare the rates of the same product from multiple shops and find the best deal for you and save your extra expenses easily.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s3.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">Corona Protection</h4>
+              <p class="description">We protect you from CoronaVirus & Scorching Summer by helping you to avoid the close crowd contact or harsh weather conditions.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s4.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">Hassle free shopping</h4>
+              <p class="description">Just build a cart online and place the order. Avoid the crowd and pick your order in seconds in place of hours in shop queues.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s5.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">Flash Delivery</h4>
+              <p class="description">We value your time & money and thus provide free flash delivery of everything at your doorstep in even less than an Hour.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <img src="{% static 'mainapp/img/s6.png' %}" style="padding: 1rem;" class="img-fluid" alt="nogozo">
+              <h4 class="title">Free Entertainment</h4>
+              <p class="description">Read news highlights, fun facts, intellectual blogs and get yourself some brain exercise with short quizzes, surveys in our web funzone.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="why-us" class="wow fadeIn section-bg">
+      <div class="container">
+        
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <p style="padding-bottom: 0rem;">We serve all three domains of the market.</p>
+        </header>
+
+        <div class="row">
+
+          <!-- <div class="col-lg-6">
+            <div class="why-us-img">
+              <img src="{% static 'mainapp/img/why-us.jpg' %}" alt="nogozo" class="img-fluid">
+            </div>
+          </div> -->
+
+          <div class="col">
+            <div class="why-us-content">
+
+              <div class="row">
+              <div class="col-xs-12 col-lg-4 features wow bounceInUp clearfix">
+                <img src="{% static 'mainapp/img/1.png' %}" style="padding: 4rem; text-align: center;" class="img-fluid" alt="nogozo">
+                <h4 style="margin-left: 0rem; text-align: center;">Users</h4>
+                <div class="container" style="padding-top: 0.5rem; padding-left: 2rem;">
+                  <div class="">⦿ Your own market Encyclopedia</div>
+                  <div class="">⦿ Easy price comparision</div>
+                  <div class="">⦿ Saves from long queues</div>
+                  <div class="">⦿ Corona Protection</div>
+                  <div class="">⦿ Free flash delivery</div>
+                  <div class="">⦿ Free Entertainment</div>
+                </div>
+                </div>
+              
+
+              <div class="col-xs-12 col-lg-4 features wow bounceInUp clearfix">
+                <img src="{% static 'mainapp/img/2.png' %}" style="padding: 4rem;" class="img-fluid" alt="nogozo">
+                <h4 style="margin-left: 0rem; text-align: center;">Shopkeepers</h4>
+                <div class="container" style="padding-top: 0.5rem; padding-left: 2rem;">
+                  <div class="col">⦿ Easy digitalization of your shop</div>
+                  <div class="col">⦿ Scale your business</div>
+                  <div class="col">⦿ Multiply your customers</div>
+                  <div class="col">⦿ Convenient crowd handling</div>
+                  <div class="col">⦿ Commission free services</div>
+                  <div class="col">⦿ Free advertisement of your product</div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-lg-4 features wow bounceInUp clearfix">
+                <img src="{% static 'mainapp/img/3.png' %}" style="padding: 4rem;" class="img-fluid" alt="nogozo">
+                <h4 style="margin-left: 0rem; text-align: center;">Home Business</h4>
+                <div class="container" style="padding-top: 0.5rem; padding-left: 2rem;">
+                  <div class="col">⦿ Bring your business online</div>
+                  <div class="col">⦿ Sell anything without shop</div>                
+                  <div class="col">⦿ Speedy earning opportunity</div>
+                  <div class="col">⦿ Free Advertisement</div>                
+                  <div class="col">⦿ Grow your customer reach</div>
+                  <div class="col">⦿ Showcase your product</div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Frequently Asked Questions</h3>
+        </header>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">In which cities your services are available? <i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>We are currently providing our services in Agra</p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">As a buyer, are there any membership charges for me? <i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>No, you don’t need to pay any membership charges (It’s FREE!)</p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">To register my shop/home business at NOGOZO, what is the process? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>You can contact us on 8979497958, and we will let you know</p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">How can I check if my order is packed or not if I opt for ‘pick up’ from the shop? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>You will be notified on the NOGOZO app as soon as your order gets packed</p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Can I check the live Open/Close and Product Availability in my nearby shops? <i class="ion-android-remove"></i></a>
+            <div id="faq5" class="collapse" data-parent="#faq-list">
+              <p>Yes, you can check the live status of the shop and their available items.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section><!-- #faq -->
+  </main>
+
+  <div class="whatsapp">
+    <a href="https://api.whatsapp.com/send?text=Hello NOGOZO!&phone=918979497958">
+    <img style="width: 4rem; opacity: 80%;" src="{% static 'mainapp/img/whatsapp.png' %}"> </a>
+  </div>
+  
+    {% endblock %}

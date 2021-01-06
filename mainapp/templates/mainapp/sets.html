@@ -1,0 +1,99 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block body %}
+<br> <br><br><br>
+
+<h1 style="text-align: center; font-size: 45px; font-family: 'Russo One', sans-serif; color: rgb(92, 91, 91);" >Select Set</h1> 
+
+<div class="container">
+    <div class="row">
+
+     {% for set in category.sets_set.all reversed %}
+      
+     <div class="col-lg-3 col-md-4">
+     <a href="{% url 'mainapp:quiz' set_id=set.set_id %}">
+       <div class="card-counter set">
+        <span class="count-set">Set {{ forloop.counter }}</span>
+        <span class="count-name"> Topic: {{ set.set_topic }} </span>
+        <span class="count-date"> {{ set.set_date }} </span>
+      </div>  </a>
+    </div>
+    
+    {% endfor %}
+
+  </div>
+</div>
+<br>
+<style>
+    .card-counter{
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    height: 150px;
+    border-radius: 5px;
+    transition: .3s linear all;
+  }
+
+  .card-counter:hover{
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .2s linear all;
+    transform: scale(1.05);
+  }
+
+  .card-counter.set{
+    background-color:     #a6acaf   ;
+    color: #FFF;
+  }
+
+  
+  .card-counter .count-set{
+    font-family: 'Acme', sans-serif;
+    position: absolute;
+    top: 25px;
+    font-size: 35px;
+    display: block;
+  }
+
+  .card-counter i{
+    position: absolute;
+    font-size: 5em;
+    opacity: 0.2;
+    top: 65px;
+  }
+
+  .card-counter .count-numbers{
+    font-family: 'Acme', sans-serif;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+  }
+
+  .card-counter .count-name{
+    position: absolute;
+    right: 35px;
+    top: 85px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
+  }
+
+  .card-counter .count-date{
+    position: absolute;
+    right: 35px;
+    top: 110px;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 15px;
+  }
+
+  .cat{
+    font-family: 'Fredoka One', cursive;
+  }
+</style>
+
+{% endblock %}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NOGOZO</title>
+  {% load static %}
+  {% load crispy_forms_tags %}
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="India's First Local Market E-Commerce Company">
+  <meta name="keywords" content="shops near me, online groceries,order online,free delivery,agra local market,daily needs,trending blogs,e-commerce,home businesses,agra,trending blogs,agra news, order daily needs online,shopping, doorstep delivery">
+  <meta name="author" content="Anuj Sharma">
+  <meta property="og:site_name" content="NOGOZO" /> <!-- website name -->
+  <meta property="og:site" content="www.nogozo.com" /> <!-- website link -->
+  <meta property="og:title" content="NOGOZO"/> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="India's First Local Market E-Commerce Company" /> <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="{% static 'mainapp/images/logo.jpg' %}" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta property="og:type" content="article" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/bootstrap/css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/font-awesome/css/font-awesome.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/animate/animate.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/ionicons/css/ionicons.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/owlcarousel/assets/owl.carousel.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/lib/lightbox/css/lightbox.min.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/style.css' %}"/>
+  
+  <script src="{% static 'mainapp/js/main.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'mainapp/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'mainapp/contactform/contactform.js' %}"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172442704-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-172442704-1');
+</script>
+
+  <!-- Favicons -->
+  <link href="{% static 'mainapp/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'mainapp/img/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+    <!--    <div id="topbar">
+          <div class="container">
+            <div class="social-links">
+              <a href="https://www.facebook.com/nogozoofficial/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/nogozocare/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/nogozocare/" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div> -->
+    
+        <div class="container">   
+          <div class="logo float-left" style="display: inline-block;">
+            <!-- Uncomment below if you prefer to use an image logo -->
+           <a href="{% url 'mainapp:index' %}" class="scrollto"><img src="{% static 'mainapp/img/logo.png' %}" style="max-height: 2.75rem; margin: 0rem;" alt="nogozo" class="img-fluid"></a> 
+           <!-- <h1 class="text-light"><a href="{% url 'mainapp:index' %}" class="scrollto"><span><b>NOGOZO</b></span></a></h1> -->
+          </div>   
+          <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="{% url 'mainapp:index' %}">Home</a></li>
+              <li><a href="{% url 'mainapp:index' %}#pricing">Features</a></li>
+              <li><a href="{% url 'mainapp:index' %}#services">Services</a></li>
+              <li class="drop-down"><a href="">Fun Zone</a>
+                <ul>
+                  <li><a href="{% url 'blog:index' %}">Blogs</a></li>
+                  <li><a href="{% url 'mainapp:music' %}">Music</a></li>
+                  <li><a href="{% url 'mainapp:quizcat' %}">Trivia Quiz</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'mainapp:merchant' %}">Merchants</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+            </ul>
+          </nav>       
+        </div>
+      </header>
+
+  {% block body %}
+  {% endblock %}
+  
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="footer-info">
+                    <h3>About Us</h3>
+                    <p>NOGOZO is India’s First Advanced Local E-Market Platform which provides its user advantages of online shopping with the trust of local merchants. 
+                      NOGOZO provides its users with a plethora of advanced features and valuable multifunctional assets for its Buyers, Merchants, Servicemen, and home businesses</p>
+                    <br> <p>We are a community that aims to build a comfortable and health-conscious market environment. We dream to create an online marketing platform that maximizes the profit and comfort of both our consumers and retailers.
+                      </p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><a href="{% url 'mainapp:index' %}">Home</a></li>
+                      <li><a href="{% url 'mainapp:index' %}#pricing">Features</a></li>
+                      <li><a href="{% url 'mainapp:index' %}#services">Services</a></li>
+                      <li><a href="{% url 'blog:index' %}">Blogs</a></li>
+                      <li><a href="{% url 'mainapp:merchant' %}">Merchants</a></li>
+                      <li><a href="{% url 'mainapp:tnc' %}">Terms of service</a></li>
+                      <li><a href="{% url 'mainapp:privacy' %}">Privacy policy</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Contact Us</h4>
+                      <strong>Phone:</strong> +91 8979497958<br>
+                      <strong>Email:</strong> contact@nogozo.com<br>                  
+                  </div>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/nogozoofficial/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/nogozocare/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/nogozocare/" class="instagram"><i class="fa fa-instagram"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="form">              
+              <h4>Send us a message</h4>
+              <form action="{% url 'mainapp:index' %}" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+ 
+
+<style>.whatsapp{position:fixed;right:0;bottom:0;margin:15px;padding:0px;width: 4rem;animation: rotation 2s infinite linear;}@keyframes rotation {from {transform: rotate(0deg);}to{transform: rotate(359deg);}}</style>
+
+  <script src="{% static 'mainapp/js/main.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'mainapp/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mainapp/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'mainapp/contactform/contactform.js' %}"></script> 
+
+  <script src="https://kit.fontawesome.com/1d8298542f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

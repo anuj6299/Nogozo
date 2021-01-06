@@ -1,0 +1,50 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block body %}
+
+<br><br>
+<section id="pricing" class="wow fadeInUp">
+    <div class="container">
+      <header class="section-header">
+        <h3>Download Now</h3> <br>
+      </header>
+
+      <div class="row flex-items-xs-middle flex-items-xs-center">
+    
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img src="{% static 'mainapp/img/user.png' %}" class="img-fluid" alt="">
+            </div> <br>
+            <div class="card-block">
+              <h4 class="card-title"> 
+                <b>Users</b>
+              </h4> 
+              <a href="https://play.google.com/store/apps/details?id=com.anvesh.nogozocustomerapplication" class="btn">Download!</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img src="{% static 'mainapp/img/shop.png' %}" class="img-fluid" alt="">
+            </div> <br>
+            <div class="card-block">
+              <h4 class="card-title"> 
+                <b>Merchants</b>
+              </h4>
+              <a href="https://play.google.com/store/apps/details?id=com.anvesh.nogozoshopapplication" class="btn">Download!</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+{% endblock %}
