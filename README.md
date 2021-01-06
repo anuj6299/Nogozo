@@ -3,7 +3,7 @@
 
 <h4>Home Page</h4>
 
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png" width="480px"/>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4" width="480px"/>
 
 <br/><br/>
 <p align="center">
