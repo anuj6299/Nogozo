@@ -1,5 +1,6 @@
 <h1>NOGOZO</h1>
 <h3 align="left">Website I build during lockdown for my startup.</h3>
+<h4>NOGOZO is a hyper-local service organization which connect customers with the merchants who provide delivery.</h4>
 
 <h2><a href='https://nogozo.com/'>Home Page</a></h2>
 
@@ -30,7 +31,7 @@
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="250px"/> &nbsp;&nbsp;
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(98).png?token=AKKLTXFBBTO2HBEK5ITU7JC77ZTPS" width="250px"/></p>
 
-<br/><br/>
+<br/>
 <p align="center">
 <a href="https://www.linkedin.com/in/anuj6299/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="" height="20" width="20" /></a>
 <a href="https://www.facebook.com/anuj6299" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="" height="20" width="20" /></a>
