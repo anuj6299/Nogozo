@@ -5,8 +5,8 @@
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="390px"/> &nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="390px"/> </p>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="400px"/> &nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="400px"/> </p>
 <br/>
 
 <h1><a href='https://nogozo.com/blog/'>Blog</a></h1>
@@ -27,8 +27,8 @@
 <h1><a href='https://nogozo.com/quiz/'>Trivia Quiz</a></h1>
 <h3>Play Quiz & Test Your Knowledge</h3>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(106).png?token=AKKLTXDFDPAF5ISJGZ5X33277ZTCG" width="385px"/> &nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(107).png?token=AKKLTXAPWBSULTT465LIYF277ZTIG" width="385px"/></p>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(106).png?token=AKKLTXDFDPAF5ISJGZ5X33277ZTCG" width="395px"/> &nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(107).png?token=AKKLTXAPWBSULTT465LIYF277ZTIG" width="395px"/></p>
 
 <br/><br/>
 <p align="center">
