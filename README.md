@@ -4,8 +4,9 @@
 <h2><a href='https://nogozo.com/'>Home Page</a></h2>
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
+<p float="left">
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="480px"/>
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="480px"/>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="480px"/> </p>
 
 <h2><a href='https://nogozo.com/blog/'>Blog</a></h2>
 
