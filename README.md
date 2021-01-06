@@ -5,8 +5,8 @@
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="485px"/> &nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="485px"/> </p>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="490px"/> &nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="490px"/> </p>
 <br/>
 
 <h1><a href='https://nogozo.com/blog/'>Blog</a></h1>
@@ -19,9 +19,9 @@
 <h1><a href='https://nogozo.com/music/'>Music</a></h1>
 <h3>Listen Music Add Free</h3>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="320px"/> &nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="320px"/> &nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(98).png?token=AKKLTXFBBTO2HBEK5ITU7JC77ZTPS" width="320px"/></p>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="300px"/> &nbsp;&nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="300px"/> &nbsp;&nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(98).png?token=AKKLTXFBBTO2HBEK5ITU7JC77ZTPS" width="300px"/></p>
 <br/>
 
 <h1><a href='https://nogozo.com/quiz/'>Trivia Quiz</a></h1>
@@ -32,7 +32,7 @@
 
 <br/><br/>
 <p align="center">
-<a href="https://www.linkedin.com/in/anuj6299/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="sachin10101998" height="20" width="20" /></a>
-<a href="https://www.facebook.com/anuj6299" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="sachin.mathers.7" height="20" width="20" /></a>
-<a href="https://www.instagram.com/_anujs/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="superachnural" height="20" width="20" /></a>
+<a href="https://www.linkedin.com/in/anuj6299/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="" height="20" width="20" /></a>
+<a href="https://www.facebook.com/anuj6299" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="" height="20" width="20" /></a>
+<a href="https://www.instagram.com/_anujs/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="20" width="20" /></a>
 </p>
