@@ -5,8 +5,8 @@
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="500px"/> &nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="500px"/> </p>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="400px"/> &nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="400px"/> </p>
 <br/>
 
 <h2><a href='https://nogozo.com/blog/'>Blog</a></h2>
