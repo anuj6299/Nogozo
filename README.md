@@ -19,8 +19,8 @@
 <h1><a href='https://nogozo.com/music/'>Music</a></h1>
 <h3>Listen Music Add Free</h3>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="300px"/> &nbsp;&nbsp;&nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="300px"/> &nbsp;&nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="300px"/> &nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="300px"/> &nbsp;&nbsp;&nbsp;&nbsp;
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(98).png?token=AKKLTXFBBTO2HBEK5ITU7JC77ZTPS" width="300px"/></p>
 <br/>
 
