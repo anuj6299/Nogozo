@@ -5,7 +5,7 @@
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="480px"/> &nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ" width="480px"/> &nbsp;&nbsp;
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE" width="480px"/> </p>
 <br/>
 
@@ -17,14 +17,14 @@
 
 <h2><a href='https://nogozo.com/music/'>Music</a></h2>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="300px"/> &nbsp;
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="300px"/> &nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(99).png?token=AKKLTXC6SVNZI3BOMSN7J5277ZTMQ" width="300px"/> &nbsp;&nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(97).png?token=AKKLTXGRGOJR5SABW3M4JL277ZTL2" width="300px"/> &nbsp;&nbsp;
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(98).png?token=AKKLTXFBBTO2HBEK5ITU7JC77ZTPS" width="300px"/></p>
 <br/>
 
 <h2><a href='https://nogozo.com/quiz/'>Trivia Quiz</a></h2>
 <p float="left">
-<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(106).png?token=AKKLTXDFDPAF5ISJGZ5X33277ZTCG" width="500px"/> &nbsp;
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(106).png?token=AKKLTXDFDPAF5ISJGZ5X33277ZTCG" width="500px"/> &nbsp;&nbsp;
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(107).png?token=AKKLTXAPWBSULTT465LIYF277ZTIG" width="500px"/></p>
 
 <br/><br/>
