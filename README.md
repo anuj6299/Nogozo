@@ -1,9 +1,11 @@
-<h1>NOGOZO</h1>
+<h1><a href='https://nogozo.com/'>NOGOZO</a></h1>
 <h3 align="left">Website I build during lockdown for my startup.</h3>
 
-<h4>Home Page</h4>
+<h2>Home Page</h2>
 
 <img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(100).png?token=AKKLTXHLHTVUG2KSJU3U4ES77ZRZ4"/>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(101).png?token=AKKLTXE6FGF7RK4BQOBTNVK77ZSEQ"/>
+<img alt="NOGOZO Home Page" src="https://raw.githubusercontent.com/anuj6299/nogozo/master/screenshots/Screenshot%20(102).png?token=AKKLTXBWINF3JU23HTSSXY277ZSGE"/>
 
 <br/><br/>
 <p align="center">
